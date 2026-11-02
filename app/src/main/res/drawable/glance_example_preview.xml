@@ -1,17 +1,22 @@
+<!-- Миниатюрное изображение, которое лаунчер показывает в каталоге виджетов. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="160dp"
     android:height="80dp"
     android:viewportWidth="160"
     android:viewportHeight="80">
+    <!-- Фон карточки виджета. -->
     <path
         android:fillColor="#202124"
         android:pathData="M8,0 H152 C156.4,0 160,3.6 160,8 V72 C160,76.4 156.4,80 152,80 H8 C3.6,80 0,76.4 0,72 V8 C0,3.6 3.6,0 8,0 Z" />
+    <!-- Условные строки тикера и цены. -->
     <path
         android:fillColor="#FFFFFF"
         android:pathData="M14,14 H48 V18 H14 Z M14,29 H68 V38 H14 Z M14,49 H48 V53 H14 Z" />
+    <!-- Условная стрелка изменения цены. -->
     <path
         android:fillColor="#2E7D32"
         android:pathData="M111,59 L104,52 L107.8,48.2 L111,51.4 L120.5,41.9 L124.3,45.7 Z" />
+    <!-- Основание стрелки на изображении предварительного просмотра. -->
     <path
         android:fillColor="#2E7D32"
         android:pathData="M108,29 H113 V50 H108 Z M104,34 L110.5,27 L117,34 Z" />

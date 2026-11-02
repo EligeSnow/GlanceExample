@@ -23,12 +23,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Регистрируем приемник, чтобы лаунчер мог найти и добавить Glance-виджет. -->
         <receiver
             android:name=".glance.StockAppWidgetReceiver"
             android:exported="true">
+            <!-- Android отправляет это событие при создании/обновлении экземпляра виджета. -->
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
+            <!-- Связываем приемник с размерами и preview-настройками виджета. -->
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/stock_app_widget_info" />
